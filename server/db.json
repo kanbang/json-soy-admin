@@ -1,0 +1,709 @@
+{
+  "files": [
+    {
+      "name": "测试",
+      "remark": "备注",
+      "pic": "uploads\\4173ceed51170970d96dab300.png",
+      "file": "uploads\\4173ceed51170970d96dab302.js",
+      "id": 3
+    },
+    {
+      "name": "测试2",
+      "remark": "",
+      "pic": "uploads\\4173ceed51170970d96dab304.png",
+      "file": "uploads\\4173ceed51170970d96dab305.png",
+      "id": 5
+    }
+  ],
+  "users": [
+    {
+      "email": "admin@mail.com",
+      "password": "$2a$10$Kc5jYikQ5.HfDUtHDbSUL.27SrPbaRv8//UY2lwUQPsNibY9zgbRa",
+      "userName": "admin",
+      "userNickname": "admin",
+      "roleSign": "",
+      "department": [],
+      "phone": "",
+      "sex": "男",
+      "overdueTime": "",
+      "status": true,
+      "describe": "",
+      "id": 1
+    },
+    {
+      "email": "test@mail.com",
+      "password": "$2a$10$Kc5jYikQ5.HfDUtHDbSUL.27SrPbaRv8//UY2lwUQPsNibY9zgbRa",
+      "userName": "test",
+      "userNickname": "test",
+      "roleSign": 2,
+      "department": [],
+      "phone": "",
+      "sex": "男",
+      "overdueTime": "",
+      "status": true,
+      "describe": "",
+      "id": 2,
+      "roles": [
+        1
+      ]
+    },
+    {
+      "email": "qq@mail.com",
+      "password": "$2a$10$Kc5jYikQ5.HfDUtHDbSUL.27SrPbaRv8//UY2lwUQPsNibY9zgbRa",
+      "userName": "qq",
+      "userNickname": "rr",
+      "roleSign": "",
+      "department": [],
+      "phone": "",
+      "sex": "男",
+      "overdueTime": "",
+      "status": true,
+      "describe": "dd",
+      "roles": [
+        1,
+        2
+      ],
+      "id": 3
+    },
+    {
+      "email": "sadfa@mail.com",
+      "password": "$2a$10$6NEhKDqVVeeNoaCfuNF19uSzeU.vEK42BnzUYrb6pa4lc9ZV837L2",
+      "userName": "sadfa",
+      "userNickname": "adfasf",
+      "roleSign": "",
+      "department": [],
+      "phone": "",
+      "sex": "",
+      "overdueTime": "",
+      "status": true,
+      "describe": "",
+      "roles": [
+        1
+      ],
+      "id": 4
+    }
+  ],
+  "menus": [
+    {
+      "menuSuperior": [],
+      "menuType": "menu",
+      "name": "home",
+      "component": "home/index.vue",
+      "componentAlias": "",
+      "isLink": false,
+      "menuSort": 1,
+      "path": "/home",
+      "redirect": "",
+      "meta": {
+        "title": "首页",
+        "icon": "ele-HomeFilled",
+        "isHide": false,
+        "isKeepAlive": true,
+        "isAffix": false,
+        "isLink": "",
+        "isIframe": false,
+        "roles": []
+      },
+      "btnPower": "",
+      "id": 1,
+      "parent_id": 0,
+      "children": []
+    },
+    {
+      "menuSuperior": [],
+      "menuType": "menu",
+      "name": "systemMenu",
+      "component": "system/menu/index.vue",
+      "componentAlias": "",
+      "isLink": false,
+      "menuSort": 11,
+      "path": "/system/menu",
+      "redirect": "",
+      "meta": {
+        "title": "菜单管理",
+        "icon": "iconfont icon-caidan",
+        "isHide": false,
+        "isKeepAlive": true,
+        "isAffix": false,
+        "isLink": "",
+        "isIframe": false,
+        "roles": []
+      },
+      "btnPower": "",
+      "id": 2,
+      "parent_id": 4,
+      "children": []
+    },
+    {
+      "menuSuperior": [],
+      "menuType": "menu",
+      "name": "ifclist",
+      "component": "ifc/ifclist/index.vue",
+      "componentAlias": "",
+      "isLink": false,
+      "menuSort": 7,
+      "path": "/jcyz/ifclist",
+      "redirect": "",
+      "meta": {
+        "title": "集成验证",
+        "icon": "ele-DataAnalysis",
+        "isHide": false,
+        "isKeepAlive": true,
+        "isAffix": false,
+        "isLink": "",
+        "isIframe": false,
+        "roles": []
+      },
+      "btnPower": "",
+      "id": 3,
+      "children": [],
+      "parent_id": 7
+    },
+    {
+      "parent_id": 0,
+      "menuType": "menu",
+      "name": "system",
+      "component": "layout/routerView/parent.vue",
+      "isLink": false,
+      "menuSort": 99,
+      "path": "/system",
+      "redirect": "",
+      "meta": {
+        "title": "系统设置",
+        "icon": "iconfont icon-xitongshezhi",
+        "isHide": false,
+        "isKeepAlive": true,
+        "isAffix": false,
+        "isLink": "",
+        "isIframe": false,
+        "roles": []
+      },
+      "btnPower": "",
+      "id": 4,
+      "children": [
+        {
+          "menuSuperior": [],
+          "menuType": "menu",
+          "name": "systemMenu",
+          "component": "system/menu/index.vue",
+          "componentAlias": "",
+          "isLink": false,
+          "menuSort": 11,
+          "path": "/system/menu",
+          "redirect": "",
+          "meta": {
+            "title": "菜单管理",
+            "icon": "iconfont icon-caidan",
+            "isHide": false,
+            "isKeepAlive": true,
+            "isAffix": false,
+            "isLink": "",
+            "isIframe": false,
+            "roles": []
+          },
+          "btnPower": "",
+          "id": 2,
+          "parent_id": 4,
+          "children": []
+        },
+        {
+          "parent_id": 4,
+          "menuType": "menu",
+          "name": "systemRole",
+          "component": "/system/role/index.vue",
+          "isLink": false,
+          "menuSort": 12,
+          "path": "/system/role",
+          "redirect": "",
+          "meta": {
+            "title": "角色管理",
+            "icon": "ele-ColdDrink",
+            "isHide": false,
+            "isKeepAlive": true,
+            "isAffix": false,
+            "isLink": "",
+            "isIframe": false,
+            "roles": []
+          },
+          "btnPower": "",
+          "id": 5,
+          "children": []
+        },
+        {
+          "parent_id": 4,
+          "menuType": "menu",
+          "name": "systemUser",
+          "component": "/system/user/index.vue",
+          "isLink": false,
+          "menuSort": 13,
+          "path": "/system/user",
+          "redirect": "",
+          "meta": {
+            "title": "用户管理",
+            "icon": "ele-User",
+            "isHide": false,
+            "isKeepAlive": true,
+            "isAffix": false,
+            "isLink": "",
+            "isIframe": false,
+            "roles": []
+          },
+          "btnPower": "",
+          "id": 6,
+          "children": []
+        }
+      ]
+    },
+    {
+      "parent_id": 4,
+      "menuType": "menu",
+      "name": "systemRole",
+      "component": "/system/role/index.vue",
+      "isLink": false,
+      "menuSort": 12,
+      "path": "/system/role",
+      "redirect": "",
+      "meta": {
+        "title": "角色管理",
+        "icon": "ele-ColdDrink",
+        "isHide": false,
+        "isKeepAlive": true,
+        "isAffix": false,
+        "isLink": "",
+        "isIframe": false,
+        "roles": []
+      },
+      "btnPower": "",
+      "id": 5,
+      "children": []
+    },
+    {
+      "parent_id": 4,
+      "menuType": "menu",
+      "name": "systemUser",
+      "component": "/system/user/index.vue",
+      "isLink": false,
+      "menuSort": 13,
+      "path": "/system/user",
+      "redirect": "",
+      "meta": {
+        "title": "用户管理",
+        "icon": "ele-User",
+        "isHide": false,
+        "isKeepAlive": true,
+        "isAffix": false,
+        "isLink": "",
+        "isIframe": false,
+        "roles": []
+      },
+      "btnPower": "",
+      "id": 6,
+      "children": []
+    },
+    {
+      "parent_id": 0,
+      "menuType": "menu",
+      "name": "jcyz",
+      "component": "layout/routerView/parent.vue",
+      "isLink": false,
+      "menuSort": 12,
+      "path": "/jcyz",
+      "redirect": "/jcyz/ifclist",
+      "meta": {
+        "title": "集成验证",
+        "icon": "ele-DataBoard",
+        "isHide": false,
+        "isKeepAlive": true,
+        "isAffix": false,
+        "isLink": "",
+        "isIframe": false,
+        "roles": ""
+      },
+      "btnPower": "",
+      "id": 7,
+      "children": [
+        {
+          "menuSuperior": [],
+          "menuType": "menu",
+          "name": "ifclist",
+          "component": "ifc/ifclist/index.vue",
+          "componentAlias": "",
+          "isLink": false,
+          "menuSort": 7,
+          "path": "/jcyz/ifclist",
+          "redirect": "",
+          "meta": {
+            "title": "集成验证",
+            "icon": "ele-DataAnalysis",
+            "isHide": false,
+            "isKeepAlive": true,
+            "isAffix": false,
+            "isLink": "",
+            "isIframe": false,
+            "roles": []
+          },
+          "btnPower": "",
+          "id": 3,
+          "children": [],
+          "parent_id": 7
+        }
+      ]
+    },
+    {
+      "parent_id": 0,
+      "menuType": "menu",
+      "name": "personal",
+      "component": "personal/index.vue",
+      "isLink": false,
+      "menuSort": 100,
+      "path": "/personal",
+      "redirect": "",
+      "meta": {
+        "title": "个人中心",
+        "icon": "iconfont icon-gerenzhongxin",
+        "isHide": false,
+        "isKeepAlive": true,
+        "isAffix": false,
+        "isLink": "",
+        "isIframe": false,
+        "roles": []
+      },
+      "btnPower": "",
+      "id": 8,
+      "children": []
+    },
+    {
+      "parent_id": 0,
+      "menuType": "menu",
+      "name": "scene",
+      "component": "layout/routerView/parent.vue",
+      "isLink": false,
+      "menuSort": 3,
+      "path": "/scene",
+      "redirect": "/scene/maplist",
+      "meta": {
+        "title": "集成场景演示",
+        "icon": "iconfont icon-huanjingxingqiu",
+        "isHide": false,
+        "isKeepAlive": true,
+        "isAffix": false,
+        "isLink": "",
+        "isIframe": false,
+        "roles": []
+      },
+      "btnPower": "",
+      "id": 9,
+      "children": []
+    },
+    {
+      "parent_id": 9,
+      "menuType": "menu",
+      "name": "maplist",
+      "component": "ifc/maplist/index.vue",
+      "isLink": false,
+      "menuSort": 0,
+      "path": "/scene/maplist",
+      "redirect": "",
+      "meta": {
+        "title": "集成场景演示",
+        "icon": "iconfont icon-diqiu1",
+        "isHide": false,
+        "isKeepAlive": true,
+        "isAffix": false,
+        "isLink": "",
+        "isIframe": false,
+        "roles": ""
+      },
+      "btnPower": "",
+      "id": 10,
+      "children": []
+    },
+    {
+      "parent_id": 0,
+      "menuType": "menu",
+      "name": "dashmap",
+      "component": "layout/routerView/link.vue",
+      "isLink": true,
+      "menuSort": 4,
+      "path": "/dashmap",
+      "redirect": "",
+      "meta": {
+        "title": "地图孪生演示",
+        "icon": "ele-MapLocation",
+        "isHide": false,
+        "isKeepAlive": true,
+        "isAffix": false,
+        "isLink": "http://localhost:8077/mapdemo",
+        "isIframe": false,
+        "roles": []
+      },
+      "btnPower": "",
+      "id": 11,
+      "children": []
+    },
+    {
+      "parent_id": 0,
+      "menuType": "menu",
+      "name": "dashthree",
+      "component": "ayout/routerView/link.vue",
+      "isLink": true,
+      "menuSort": 5,
+      "path": "/dashthree",
+      "redirect": "",
+      "meta": {
+        "title": "楼宇孪生演示",
+        "icon": "ele-Management",
+        "isHide": false,
+        "isKeepAlive": true,
+        "isAffix": false,
+        "isLink": "http://localhost:8077/buildingdemo",
+        "isIframe": false,
+        "roles": ""
+      },
+      "btnPower": "",
+      "id": 12,
+      "children": []
+    },
+    {
+      "parent_id": 0,
+      "menuType": "menu",
+      "name": "pagesIndex",
+      "component": "",
+      "isLink": false,
+      "menuSort": 2,
+      "path": "/pages",
+      "redirect": "/pages/files",
+      "meta": {
+        "title": "message.router.pagesIndex",
+        "icon": "iconfont icon-fuzhiyemian",
+        "isHide": false,
+        "isKeepAlive": true,
+        "isAffix": false,
+        "isLink": "",
+        "isIframe": false,
+        "roles": []
+      },
+      "btnPower": "",
+      "id": 13,
+      "children": [
+        {
+          "parent_id": 13,
+          "menuType": "menu",
+          "name": "pagesfiles",
+          "component": "pages/files/index.vue",
+          "isLink": false,
+          "menuSort": 0,
+          "path": "/pages/files",
+          "redirect": "",
+          "meta": {
+            "title": "文件管理",
+            "icon": "fa fa-file-o",
+            "isHide": false,
+            "isKeepAlive": true,
+            "isAffix": false,
+            "isLink": "",
+            "isIframe": false,
+            "roles": []
+          },
+          "btnPower": "",
+          "id": 14,
+          "children": []
+        }
+      ]
+    },
+    {
+      "parent_id": 13,
+      "menuType": "menu",
+      "name": "pagesfiles",
+      "component": "pages/files/index.vue",
+      "isLink": false,
+      "menuSort": 0,
+      "path": "/pages/files",
+      "redirect": "",
+      "meta": {
+        "title": "文件管理",
+        "icon": "fa fa-file-o",
+        "isHide": false,
+        "isKeepAlive": true,
+        "isAffix": false,
+        "isLink": "",
+        "isIframe": false,
+        "roles": []
+      },
+      "btnPower": "",
+      "id": 14
+    }
+  ],
+  "roles": [
+    {
+      "name": "user",
+      "roleSign": "user",
+      "sort": 0,
+      "status": true,
+      "describe": "用户",
+      "id": 1,
+      "menus": [
+        1,
+        3
+      ]
+    },
+    {
+      "name": "admin",
+      "roleSign": "admin",
+      "sort": 0,
+      "status": true,
+      "describe": "管理员",
+      "id": 2,
+      "menus": [
+        1,
+        14,
+        2,
+        5,
+        6
+      ]
+    }
+  ],
+  "ifclist": [
+    {
+      "name": "餐厅",
+      "remark": "餐厅",
+      "pic": "uploads\\920f1f649b00534c0cef0e108.png",
+      "file": "uploads\\920f1f649b00534c0cef0e109.ifc",
+      "id": 1
+    },
+    {
+      "name": "数字中心",
+      "remark": "数字中心",
+      "pic": "uploads\\920f1f649b00534c0cef0e104.png",
+      "file": "uploads\\920f1f649b00534c0cef0e105.ifc",
+      "id": 2
+    },
+    {
+      "name": "办公楼",
+      "remark": "办公楼模型",
+      "pic": "uploads\\920f1f649b00534c0cef0e100.png",
+      "file": "uploads\\920f1f649b00534c0cef0e101.ifc",
+      "id": 3
+    },
+    {
+      "name": "住宅",
+      "remark": "住宅",
+      "pic": "uploads\\920f1f649b00534c0cef0e102.png",
+      "file": "uploads\\920f1f649b00534c0cef0e103.ifc",
+      "id": 4
+    },
+    {
+      "name": "站台",
+      "remark": "站台",
+      "pic": "uploads\\920f1f649b00534c0cef0e106.png",
+      "file": "uploads\\920f1f649b00534c0cef0e107.ifc",
+      "id": 5
+    },
+    {
+      "name": "暖通",
+      "remark": "暖通",
+      "pic": "uploads\\c176b613482865b37b8128a00.png",
+      "file": "uploads\\c176b613482865b37b8128a01.ifc",
+      "id": 6
+    }
+  ],
+  "maplist": [
+    {
+      "name": "风电",
+      "remark": "风电机组",
+      "pic": "uploads\\48bab2ba7202ba963481c5500.png",
+      "id": 1,
+      "camera": {
+        "center": {
+          "lng": 120.39279993897776,
+          "lat": 36.064398907101705
+        },
+        "zoom": 15.153405428846654,
+        "bearing": 0,
+        "pitch": 67.31873880670231
+      }
+    },
+    {
+      "name": "地产",
+      "remark": "地产",
+      "pic": "uploads\\c176b613482865b37b8128a04.png",
+      "id": 2,
+      "camera": {
+        "center": {
+          "lng": 120.39612227301495,
+          "lat": 36.053803916796085
+        },
+        "zoom": 16.833211258339972,
+        "bearing": 0,
+        "pitch": 49.731772248804035
+      }
+    }
+  ],
+  "mapmodels": [
+    {
+      "name": "研究所",
+      "lng": 120.39440574792671,
+      "lat": 36.05780572162354,
+      "h": 0,
+      "scale": "[5,5,5]",
+      "rotate": "[90,228,0]",
+      "trans": "[0,0,0]",
+      "map": "1",
+      "file": "uploads\\047170675a0fc88b90c47b900.ifc",
+      "id": 1,
+      "visible": true
+    },
+    {
+      "name": "风力发电机组1",
+      "lng": 120.39247338226325,
+      "lat": 36.05988677446335,
+      "h": 0,
+      "scale": "[0.05,0.05,0.05]",
+      "rotate": "[90,0,0]",
+      "trans": "[0,0,0]",
+      "map": "1",
+      "file": "uploads\\c176b613482865b37b8128a02.glb",
+      "id": 2,
+      "visible": true
+    },
+    {
+      "name": "办公楼",
+      "lng": 120.38759696569788,
+      "lat": 36.061037184604345,
+      "h": 0,
+      "scale": "[1,1,1]",
+      "rotate": "[90,0,0]",
+      "trans": "[0,0,0]",
+      "map": "1",
+      "file": "uploads\\c176b613482865b37b8128a03.glb",
+      "id": 3,
+      "visible": true
+    },
+    {
+      "name": "商业地产",
+      "lng": 120.3955480002635,
+      "lat": 36.053501252954945,
+      "h": 0,
+      "scale": "[1,1,1]",
+      "rotate": "[90,73,0]",
+      "trans": "[0,0,0]",
+      "map": "2",
+      "file": "uploads\\57ceb9ee2167d2025f566de00.glb",
+      "id": 4,
+      "visible": true
+    },
+    {
+      "name": "住宅楼",
+      "lng": 120.39779975625869,
+      "lat": 36.05529800073283,
+      "h": 0,
+      "scale": "[1,1,1]",
+      "rotate": "[90,0,0]",
+      "trans": "[0,0,0]",
+      "map": "2",
+      "file": "uploads\\5b72e187645dea28a13ef2900.glb",
+      "id": 5,
+      "visible": true
+    }
+  ]
+}
